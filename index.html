@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> APEXATHLETE</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="assets/logodark.jpg" alt="logo" class="logodark" />
+             
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#class">Classes</a></li>
+          <li><a href="#diet">Diet</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+        <div class="nav__btns">
+          <li><a href="login.html">Log in</a></li>
+        </div>
+        
+       
+        
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>DON'T STOP TILL YOU SUCCEED!</h1>
+          <h2>Fitness is the key to happiness</h2>
+          <p>
+            Unlock your full potential with our expert programs. Every step you take brings you closer
+            to a healthier living making a more happier you. Let's make fitness a lifestyle!
+          </p>
+          <div class="header__btn">
+            <a href="#about" class="btn">Explore More</a>
+          </div>
+          
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+    
+
+    <div class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about.png" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">Ready To Make A Change?</h2>
+          <p>
+            Taking the first step towards a healthier life, stronger you can be the
+            most challenging part of the journey, but it's also the most
+            rewarding. Whether you're a beginner or a seasoned athlete, our
+            training programs are designed to help you reach your
+            goals faster and more efficiently.
+          </p>
+          <p>
+            With our diets and workouts, you'll have everything you need to stay
+            committed and see real results.
+          </p>
+          <div class="about__btn">
+            <a href="#service" class="btn">Get Started</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">Services We Provide</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <span>01</span>
+            <h4>💪🏻Fitness Training</h4>
+            <p>
+              Our fitness training programs are tailored to help you build
+              strength, improve endurance, and achieve your personal fitness
+              goals.
+            </p>
+          </div>
+          <div class="service__card">
+            <span>02</span>
+            <h4>🧘🏻‍♀️Yoga</h4>
+            <p>
+              Perfect for all levels, our sessions focus on improving
+              flexibility, balance, and mental clarity while helping you manage
+              stress.
+            </p>
+          </div>
+          <div class="service__card">
+            <span>03</span>
+            <h4>🧠Mental Health</h4>
+            <p>
+              Our mental health services are designed to boost confidence and 
+              mental strength.
+            </p>
+          </div>
+          <div class="service__card">
+            <span>04</span>
+            <h4>⚔Personal Defence</h4>
+            <p>
+              Suitable for all ages and skill levels, our martial arts program
+              emphasizes technique, respect, and personal growth while building
+              confidence.
+            </p>
+          </div>
+          <div class="service__image">
+            <img src="assets/service.png" alt="service" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular" id="class">
+      <div class="section__container popular__container">
+        <h2 class="section__header">What Do You Want To Join Today?</h2>
+        <div class="popular__grid">
+          <div class="popular__card" onclick="loadVideo('Cardio Strength')">
+            <div>
+              <h4>Cardio Strength</h4>
+              <p>Full-body workout with cardio</p>
+            </div>
+            <span><i class="ri-arrow-right-fill"></i></span>
+          </div>          
+          <div class="popular__card"onclick="loadVideo('Weight Training')">
+            <div>
+              <h4>Weight Training</h4>
+              <p>Build muscle strength</p>
+            </div>
+            <span><i class="ri-arrow-right-fill"></i></span>
+          </div>
+          <div class="popular__card"onclick="loadVideo('Yoga for Flexibility')">
+            <div>
+              <h4>Yoga for Flexibility</h4>
+              <p>Improve flexibility and relax</p>
+            </div>
+            <span><i class="ri-arrow-right-fill"></i></span>
+          </div>
+          <div class="popular__card"onclick="loadVideo('HIIT')">
+            <div>
+              <h4>HIIT</h4>
+              <p>Short bursts of intense exercise</p>
+            </div>
+            <span><i class="ri-arrow-right-fill"></i></span>
+          </div>
+         
+          <div class="popular__card"onclick="loadVideo('Boxing Training')">
+            <div>
+              <h4>Boxing Training</h4>
+              <p>Enhance agility and stamina</p>
+            </div>
+            <span><i class="ri-arrow-right-fill"></i></span>
+          </div>
+          <div class="popular__card"onclick="loadVideo('Pilates Core Workout')">
+            <div>
+              <h4>Pilates Core Workout</h4>
+              <p>Strengthen your core</p>
+            </div>
+            <span><i class="ri-arrow-right-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="diet" style="padding: 60px 20px; background: #f9f9f9;">
+      <div style="max-width: 1200px; margin: auto;">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 10px;">Personalized Diet Plans</h2>
+        <p style="text-align: center; max-width: 700px; margin: auto; font-size: 1.1rem; color: #666;">
+          Fuel your body right! Choose your goal and follow a diet designed to help you stay on track.
+        </p>
+    
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px;">
+          <!-- Weight Loss -->
+          <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <img src="assets/weight loss.jpg" alt="Weight Loss Meal" style="width: 100%; border-radius: 10px;">
+            <h3 style="margin-top: 15px;">Weight Loss Plan</h3>
+            <ul>
+              <li>✔️ High Protein, Low Carb</li>
+              <li>🥗 Salad + Grilled Chicken</li>
+              <li>🥤 Green Smoothies</li>
+              <li>🚫 Avoid Sugar & Refined Foods</li>
+            </ul>
+          </div>
+    
+          <!-- Muscle Gain -->
+          <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <img src="assets/gain.webp" alt="Muscle Gain Meal" style="width: 100%; border-radius: 10px;">
+            <h3 style="margin-top: 15px;">Muscle Gain Plan</h3>
+            <ul>
+              <li>🍚 High Carbs + Protein</li>
+              <li>🍳 Eggs, Rice, Chicken, Nuts</li>
+              <li>🥛 Protein Shakes Post Workout</li>
+              <li>🍌 Bananas, Oats, Peanut Butter</li>
+            </ul>
+          </div>
+    
+          <!-- Balanced Diet -->
+          <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <img src="assets/balanced diet.png" alt="Balanced Meal" style="width: 100%; border-radius: 10px;">
+            <h3 style="margin-top: 15px;">Balanced Maintenance Plan</h3>
+            <ul>
+              <li>🥗 Mix of Carbs, Fats, Proteins</li>
+              <li>🍲 Dal, Roti, Veggies, Yogurt</li>
+              <li>💧 Hydration is Key</li>
+              <li>🍎 Fruits & Nuts Daily</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div style="margin-top: 70px;">
+          <h3 style="text-align: center;">💡 Healthy Eating Tips</h3>
+          <ul style="max-width: 800px; margin: 20px auto; font-size: 1rem; color: black;">
+            <li>✔️ Eat every 3-4 hours to maintain metabolism.</li>
+            <li>✔️ Stay hydrated with at least 2-3L of water daily.</li>
+            <li>✔️ Avoid processed and deep-fried foods.</li>
+            <li>✔️ Sleep well – your body recovers and burns fat while you rest.</li>
+            <li>✔️ Include fiber-rich foods like fruits and whole grains.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="facility__container">
+      <div class="facility__image">
+        <img src="assets/facility.jpg" alt="facility" />
+      </div>
+      <div class="facility__content">
+        <h2 class="section__header">It's About Who You Can Become</h2>
+        <p>
+          At our page, we believe that fitness is more than just physical—it's
+          about transforming your mindset, pushing your limits, and realizing
+          your full potential. Every workout is a step toward becoming the
+          strongest, healthiest, and most confident version of yourself.
+        </p>
+        <p>
+          It's not about quick fixes or temporary results; it's about adopting a
+          lifestyle that fuels your passion for self-improvement.
+        </p>
+      </div>
+    </section>
+    
+    
+    <section class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="assets/logodark.jpg" alt="logo" />
+          </a>
+          <ul class="footer__links">
+            <li>
+              <a href="#"><span><i class="ri-phone-line"></i></span> +91 123456789</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/Rajendra+Mane+College+of+Engineering+and+Technology/@17.0497556,73.565039,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc1e6cf843a4ea3:0x3cb724d27bcb2cf0!8m2!3d17.0497505!4d73.5699046!16s%2Fg%2F124yl4x3j?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
+                <span><i class="ri-map-pin-line"></i></span> Ratnagiri RMCET
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="#"><span><i class="ri-mail-line"></i></span> info@apexathlete.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </section>
+
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <div id="videoModal" class="video-modal">
+      <div class="video-modal-content">
+        <span class="close-btn" onclick="closeVideo()">&times;</span>
+        <iframe
+          id="videoFrame"
+          width="100%"
+          height="500"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCU-ZFxdLMokoRNZf3UJPSbvbaxlK6Vh-Y",
+    authDomain: "fitzone-auth.firebaseapp.com",
+    projectId: "fitzone-auth",
+    storageBucket: "fitzone-auth.appspot.com",
+    messagingSenderId: "308677183369",
+    appId: "1:308677183369:web:a960ecf3a9673e08528358",
+    measurementId: "G-1LZQXB5SXC"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script>
+  const videos ={
+    "Cardio Strength": "https://www.youtube.com/embed/Vn5BLaNZMAE",
+    "Weight Training": "https://www.youtube.com/embed/U0bhE67HuDY",
+    "Yoga for Flexibility": "https://www.youtube.com/embed/v7AYKMP6rOE",
+    "HIIT": "https://www.youtube.com/embed/ml6cT4AZdqI",
+    "Personal Training": "https://www.youtube.com/embed/DQj40jQGs8g",
+    "Group Fitness Classes": "https://www.youtube.com/embed/rc0IuDjP8UQ",
+    "Boxing": "https://www.youtube.com/embed/wIKrLzBAf84",
+    "Pilates": "https://www.youtube.com/embed/ezke0GlKeM4",
+    "Spin Class": "https://www.youtube.com/embed/hdL49zjL0IQ"
+  
+  
+  };
+
+  function loadVideo(className) {
+    const videoUrl = videos[className];
+    if (videoUrl) {
+      const modal = document.getElementById("videoModal");
+      const frame = document.getElementById("videoFrame");
+      frame.src = videoUrl;
+      modal.style.display = "flex";
+    } else {
+      alert("Video not found for: " + className);
+    }
+  }
+
+  function closeVideo() {
+    const modal = document.getElementById("videoModal");
+    const frame = document.getElementById("videoFrame");
+    frame.src = "";
+    modal.style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>

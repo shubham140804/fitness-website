@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | ApexAthlete</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-page {
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-page h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #ff5722;
+    }
+
+    .register-page input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .register-page button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff5722;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .register-page button:hover {
+      background-color: #e64a19;
+    }
+
+    .register-page p {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .register-page a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .register-page a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <section class="register-page">
+    <h2>Create Account</h2>
+    <form id="register-form">
+      <input type="email" id="register-email" placeholder="Email" required />
+      <input type="password" id="register-password" placeholder="Password" required />
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </section>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCU-ZFxdLMokoRNZf3UJPSbvbaxlK6Vh-Y",
+      authDomain: "fitzone-auth.firebaseapp.com",
+      projectId: "fitzone-auth",
+      storageBucket: "fitzone-auth.appspot.com",
+      messagingSenderId: "308677183369",
+      appId: "1:308677183369:web:a960ecf3a9673e08528358",
+      measurementId: "G-1LZQXB5SXC"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Register Script -->
+  <script>
+    const auth = firebase.auth();
+    const form = document.getElementById('register-form');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('register-email').value;
+      const password = document.getElementById('register-password').value;
+
+      auth.createUserWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          alert("Registered successfully!");
+          window.location.href = "login.html"; // Redirect to login after registration
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    });
+  </script>
+</body>
+</html>
